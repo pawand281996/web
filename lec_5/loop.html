@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <!--defer means it it used in last of body it is not supported by all the browser
+    <script defer src="script.js"></script>
+    -->
+
+</head>
+<body>
+    
+   
+   <input id='in'>
+   <button onclick="printloop()">Loop</button>
+   <ul id="list"> 
+       
+   </ul>
+    <script>
+        
+        function printloop() {
+            let inp=document.getElementById('in')
+            let n = parseInt(inp.value)
+          //  console.log(n)
+          let list=document.getElementById('list')
+          let start=new Date().getTime();
+          let listhtml=""
+          for (let i=1; i <=n; i++)
+{
+    let print=""
+   if(i%3==0)print+='fizz'
+   if(i%5==0)print+='buzz'
+   if(print=='')print=i
+
+//    listhtml +='<li>'+ print +'</li>'
+}
+list.innerHTML=listhtml
+let end=new Date().getTime()
+console.log(end-start)
+}
+
+    </script>
+   
+
+    
+ <!--<script src="script.js"></script>-->   
+</body>
+</html>

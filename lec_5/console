@@ -1,0 +1,8 @@
+hello world
+script.js:6 11
+script.js:9 10
+script.js:14 {a: 10, b: true, c: "hello world"}
+script.js:16 {a: 20, b: true, c: "hello world"}
+script.js:20 hello john
+script.js:20 hello undefined
+script.js:20 hello hello
