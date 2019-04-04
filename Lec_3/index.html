@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <!--
+        1.priority of id is at number 1 and if two id is there with same name then second gets priorit
+        2.class gets second priorty..
+        3.oberwrites are only properties which are common other properties are additive..
+        4.last priority is of tag
+        if same priority level are one after other then second one is applied
+        specifity.....
+      neasting>  [id > class > tag]
+      
+        if specifity is same....
+        cascading
+
+    -->
+
+    <style>
+    
+      .container .orange{
+            color: #08e21a;
+            margin: 10px;
+              }
+        #green{
+            color: red;
+          
+
+        }
+        .orange{
+            color:orange;
+            margin: 30px;
+        }
+        .blue{
+            color:blue;
+        }
+        div{
+            background-color: bisque;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container"> 
+        <!--
+            id provides a uniques should be different for different elements
+        -->
+        <p id="green" class="green"> hello world ssup</p>
+        <!--
+            class name can se same
+        -->
+        <p class="orange blue">i love india</p>
+        <p>football is best sports</p>
+        <spane class="orange">hello world</span>
+
+    </div>
+    
+</body>
+</html>

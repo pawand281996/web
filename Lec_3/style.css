@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+
+/*.box{
+    width: 400px;
+    height: 400px;
+    border: 1px solid blue;
+}
+
+.small-box{
+    width: 40px;
+    height: 40px;
+    border: 1px solid grey
+} */
+
+.box{
+    background-color: gainsboro;
+    border-bottom: 1px solid grey;
+    height:80px;
+}
+
+.small-box{
+    height:20px;
+    border: 1px solid black;
+    width: 60px;
+   display: block-inline;
+}
+span:hover{
+    cursor: pointer;
+    color:grey;
+    border-bottom: 1px solid black;
+}
+
+
